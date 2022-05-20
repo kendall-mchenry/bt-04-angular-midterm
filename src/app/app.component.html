@@ -1,6 +1,6 @@
 <nav class="navBar">
-  <button routerLink="home">Home</button>
-  <button routerLink="about">About</button>
-  <button routerLink="jobs">Jobs</button>
+  <span [routerLink]="['home']" class="navItem">Home</span>
+  <span [routerLink]="['about']" class="navItem">About</span>
+  <span [routerLink]="['jobs']" class="navItem">Jobs</span>
 </nav>
 <router-outlet></router-outlet>

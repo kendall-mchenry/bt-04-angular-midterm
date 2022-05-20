@@ -1,0 +1,13 @@
+.navBar {
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+}
+
+.navItem {
+    padding: 30px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+

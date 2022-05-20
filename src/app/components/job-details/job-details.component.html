@@ -1,5 +1,10 @@
-<div>
+<div *ngIf="job">
   <h1>{{ job.title }}, {{ job.employer }} ({{ job.duration }})</h1>
-  <p>{{ job.description }}</p>
-  <p><a routerLink="/jobs">Back</a></p>
+  <p class="jobDesc">{{ job.description }}</p>
+  <p><a [routerLink]="['/jobs']">Back</a></p>
+</div>
+
+<div *ngIf="!job">
+  <p>No job data. Invalid job input.</p>
+  <p><a [routerLink]="['/jobs']">Back</a></p>
 </div>
